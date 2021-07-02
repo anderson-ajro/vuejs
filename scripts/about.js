@@ -1,13 +1,14 @@
-Vue.component('local-1',{
-
+Vue.component('brs-1',{
+	
 	
 	
 	props: ['image','titulo2','conten','conten2','list1','list2','list3'],
+	
 	template:`
 	<section id="about" class="about">
-	<div class="container" data-aos="fade-up">
+	<div class="container">
   	<div class="row">
-	<div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+	<div class="col-lg-6 order-1 order-lg-2">
 	  <div class="about-img">
 		<img :src="image"  alt="alt">	
 

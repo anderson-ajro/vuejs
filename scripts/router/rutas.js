@@ -1,27 +1,26 @@
 const home = { template: ` 
 <section id="hero" class="d-flex align-items-center">
-  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+  <div class="container position-relative text-center text-lg-start">
     <div class="row">
       <div class="col-lg-8">
         <h1>Bienvenido a <span>Bier ST</span></h1>
         <h2>Fusionando los sabores de Latinoamerica</h2>
 
         <div class="btns">
-        <router-link to="/menu" exact class="btn-menu animated fadeInUp scrollto">Nuestro Menu</router-link>
-        <router-link to="/reserva" exact class="btn-book animated fadeInUp scrollto">Reservar</router-link>
+        <router-link to="/menu" exact class="btn-menu">Nuestro Menu</router-link>
+        <router-link to="/reserva" exact class="btn-book">Reservar</router-link>
         </div>
       </div>
-      <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
-        data-aos-delay="200">
+      <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative">
       </div>
     </div>
   </div>
 </section> `, name:'home' 
 }
-const acerca = {template: `<local-1></local-1>`, name:"acerca"
+const acerca = {template: `<brs-1></brs-1>`, name:"acerca"
 }
 const unicos = {template: ` <section id="why-us" class="why-us srv">
-<div class="container" data-aos="fade-up">
+<div class="container">
 
   <div class="section-title">
     <h2>¿Porque elegir Bier ST?</h2>
@@ -35,13 +34,14 @@ const unicos = {template: ` <section id="why-us" class="why-us srv">
         :ctd="servicio.ctd">
         </services-st>
     </div>
+</div>
 
 </section>`, name:"unicos"
 }
 const menu = {template: `<menu-st></menu-st>`, name:"menu"
 }
-const cheff = {template: `      <section id="chefs" class="chefs">
-<div class="container" data-aos="fade-up">
+const cheff = {template: ` <section id="chefs" class="chefs">
+<div class="container">
 
   <div class="section-title">
     <h2>Chefs</h2>
@@ -61,21 +61,21 @@ const cheff = {template: `      <section id="chefs" class="chefs">
 
       </div>
       </div>
-
+      </div>
 
 </div>
 </section>`, name:"cheff"
 }
 const galeria = {template: ` <section id="gallery" class="gallery">
   
-<div class="container" data-aos="fade-up">
+<div class="container">
   <div class="section-title">
     <h2>Galeria</h2>
     <p>Algunas fotografias de Bier ST</p>
   </div>
 </div>
 
-<div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+<div class="container-fluid">
 
   <div class="row g-0">
 
@@ -94,7 +94,7 @@ const galeria = {template: ` <section id="gallery" class="gallery">
 </section>`, name:"galeria"
 }
 const reserva = {template: `<section id="book-a-table" class="book-a-table v-cloak formulario1">
-<div class="container" data-aos="fade-up">
+<div class="container">
 
   <div class="section-title">
     <h2>Reservas Biert ST</h2>
@@ -113,7 +113,7 @@ const contactos = {template: `
 <div>
 
 <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
   
           <div class="section-title">
             <h2>Contacto</h2>
@@ -121,7 +121,7 @@ const contactos = {template: `
           </div>
         </div>
   
-        <div data-aos="fade-up">
+        <div >
           <iframe style="border:0; width: 100%; height: 350px;"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3021121552556!2d-58.370660784174405!3d-34.62180496596352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d25a20d091%3A0x1c69f4b647402512!2sAv.%20San%20Juan%20200%2C%20C1147AAN%20CABA!5e0!3m2!1ses!2sar!4v1621886617318!5m2!1ses!2sar"
             allowfullscreen></iframe>
@@ -205,7 +205,7 @@ const routes = [
   { path: '/menu', component: menu },
   { path: '/cheff', component: cheff },
   { path: '/galeria', component: galeria },
-  { path: '/contacto', component: contactos },
+  { path: '/contactos', component: contactos },
   { path: '/reserva', component: reserva },
   { path: '*', redirect: '/' }
 

@@ -2,7 +2,7 @@ Vue.component('cheff-st', {
 	props: ['image', 'cargo', 'alt'],
 	template: `
 	<div>
-	<div class="member" data-aos="zoom-in" data-aos-delay="100">
+	<div class="member">
 
   	<img :src="image" class="img-fluid" alt="alt">
   	<div class="member-info">
